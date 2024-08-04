@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js 시작하기</title>
+  <script src="https://unpkg.com/vue@2.5.17"></script>
+</head>
+
+<body>
+  <div id="app">
+    <p>
+      {{ message }}
+    </p>
+  </div>
+  
+  <script>
+    console.assert(typeof Vue !== 'undefined');
+    new Vue({
+      el: '#app',
+      data: {
+        message: '안녕하세요!'
+      }
+    });
+  </script>
+</body>
+</html>
